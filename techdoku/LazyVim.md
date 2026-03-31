@@ -2,7 +2,7 @@
 
 ## Keymaps
 
-**general**
+### general
 
 | key | desc |
 | --- | --- |
@@ -17,7 +17,7 @@
 | `<leader>fn` | new file |
 | `<leader>qq` | quit all |
 
-**Telescope**
+### Telescope
 
 | key | desc |
 | --- | --- |
@@ -25,7 +25,24 @@
 | `<leader>fr` | recent files |
 | `<leader>` | recent files |
 
-**search**
+### explorer snacks
+
+| key | desc |
+| --- | --- |
+| `<leader>e` | toggle explorer snacks (root dir) |
+| `<leader>E` | toggle explorer snacks (cwd) |
+
+#### im Snacks-Tree
+
+| key | desc |
+| --- | --- |
+| a | Datei erstellen (oder Verz. mit trailing "/"); ganze Hierarchie mögl. |
+| r | Datei umbenennen |
+| d | Datei löschen |
+| y/x/p | Datei yank/cut/paste |
+| h/l | Ordner zu/aufklappen |
+
+### search
 
 | key | desc |
 | --- | --- |
@@ -36,24 +53,27 @@
 | `R` | treesitter search |
 | `<c-space>` | treesitter incremental selection |
 
-**buffers**
+### buffers
 
 | key | desc |
 | --- | --- |
+| `Shift-H/L` | switch buffer left/right |
 | `<leader>bb` | switch buffer |
 | `<leader>bd` | delete buffer |
 | `<leader>bD` | delete buffer and window |
 
-**windows**
+### windows
 
 | key | desc |
 | --- | --- |
+| `Ctrl-h` | Fokus nach links |
+| `Ctrl-l` | Fokus nach rechts |
 | `<leader>-` | split below |
 | `<leader>/` | split right |
 | `<leader>wd` | delete window |
 | `<leader>wm` | toggle zoom |
 
-**tabs**
+### tabs
 
 | key | desc |
 | --- | --- |
@@ -64,14 +84,14 @@
 | `<leader><tab>d` | delete tab |
 | `<leader><tab>o` | close other tabs |
 
-**comments**
+### comments
 
 | key | desc |
 | --- | --- |
 | `gco` | add comment below |
 | `gcO` | add comment above |
 
-**Markdown**
+### Markdown
 
 | key | desc |
 | --- | --- |
@@ -81,7 +101,7 @@
 | `<leader>cs` | Zeigt Gliederung aller Überschriften an |
 | `gx` | öffnet Link unter Cursor |
 
-**LSP**
+### LSP
 
 | key | desc |
 | --- | --- |
@@ -103,7 +123,7 @@
 | `]] / [[` | next/prev reference |
 | `<a>n / <a>p` | next/prev reference |
 
-**UI**
+### UI
 
 | key | desc |
 | --- | --- |

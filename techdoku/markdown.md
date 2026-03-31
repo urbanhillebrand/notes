@@ -35,14 +35,14 @@ ordered durch vorangestelltes `1.` (Ziffer kann konstant bleiben)
 
 Einzelne Zeilen / Wörter zwischen Backticks stellen
 
-Mehrzeiligen Code zwischen "fences" mit stellen; z.B.
+Mehrzeiligen Code zwischen "fences" mit stellen (am besten mit Sprache); z.B.
 
-```
-```
+```bash
 blah code
-```
 ```
 
 ## Quotes
 
 Blockquotes durch vorangestelltes `>`. Verschachtelte Quotes durch `>>` usw.
+
+>Dies ist ein Quote.

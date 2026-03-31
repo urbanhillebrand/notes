@@ -4,7 +4,7 @@
 
 - Erklärung Netzwerktopologie (RZ, Zonen, zentrale/dezentrale Kundenumgebungen)
 - VLANs, Switches
-- FW-Infrastruktur zentral+dezentral (OPNsense, mox)
+- FW-Infrastruktur zentral+dezentral (OPNsense, mox, ggf. Fortigate)
 - VPN-Infrastruktur
 - OSS (Odoo, Keycloak, OpenLDAP, Nextcloud, xWiki...)
 - Hypervisor vs. Container (hinsichtlich Netzwerk-/Zonenintegration)
