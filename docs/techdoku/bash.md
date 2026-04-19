@@ -90,6 +90,8 @@ ls -ld [[:digit:]]*
 mv filename{,.bak}
 mv filename.{old,new}
 
+ls sub/**/*.txt # findet auch in allen Unterordnern
+
 while IFS= read -r line; do
   printf "%s\n" "$line"
 done < "$file"
@@ -103,8 +105,8 @@ Aliase können nicht mit Parametern umgehen, deswegen z.B.
 
 `foo() { /path/to/command "$@" ;}`
 
-
 **tcp-Socket ohne Tools aufmachen**
+
 ```
 exec 3<>/dev/tcp/google.com/80
 echo -e "GET / HTTP/1.1\r\nhost: google.com\r\nConnection: close\r\n\r\n" >&3
@@ -156,7 +158,7 @@ done
 
 **Options**
 
-* `set -o pipefail` verwenden 
+* `set -o pipefail` verwenden
 * `set -o nounset` verwenden (Abbruch bei leerer Variable)
 * `set -o errexit` ggf. verwenden # fail on every non-zero return code
 * `set -o xtrace` zum Debugging
@@ -198,6 +200,18 @@ trap - INT TERM EXIT
 
 ```
 find * -maxdepth 0 -type d -print0 | xargs -0 -I{} sh -c 'cd "{}"; sudo -u www-data php occ app:disable duplicatefinder;'
+```
+
+**diff mit process output**
+
+```
+diff <(ls ./foo) <(ls ./bar)
+
+ls ./foo > foo-baseline.txt
+diff foo-baseline.txt <(ls ./foo)
+
+# oder mit watch
+watch "bash -c 'diff foo-baseline.txt <(ls ./foo)'"
 ```
 
 **split space separated strings**

@@ -1,8 +1,8 @@
-= swaks
+# swaks (swiss army knife for SMTP)
 
-**Snippets**
+## Snippets
 
-```
+```bash
 swaks --server localhost --from uh@cibex.net --to postmaster@eca.at --cc a@b --bcc b@c
 
 # mit Auth., TLS über den submission-Port:
@@ -21,7 +21,7 @@ swaks --server localhost --from a@b --to b@c --body -
 ... --body "body text" --attach-type "application/pdf" --attach /path/to/file.pdf
 ```
 
-**Interessante Optionen**
+## Interessante Optionen
 
 - `--xlient-(addr|name|port|proto|destaddr|destport|helo|login|reverse-name)`
 - Header mit `--header` setzen (z.B. `--header "Subject: Testmail`")

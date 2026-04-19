@@ -27,3 +27,9 @@ rsync --info=progress2 --no-inc-recursive # oder --no-i-r
 
 **🔥 CAUTION**\
 `no-i-r` liest vorher alle Files ein, also längere Laufzeit und mehr Speicherverbrauch!
+
+**Arbeiten mit relativen Pfaden**
+
+Folgender Command legt auch "sub1" am Ziel an (-R = --relative). Der führende `.` ist notwendig!
+
+`rsync -R ./sub1/sub2 destination``
